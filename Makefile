@@ -32,7 +32,7 @@ test:
 
 
 test-with-flags:
-	@echo SOURCE: $(SOURCE) 
+	@echo SOURCE: $(SOURCE)
 	@echo DATABASE: $(DATABASE)
 
 	@go test $(TEST_FLAGS) .
@@ -57,7 +57,7 @@ html-coverage:
 
 
 deps:
-	-go get -v -u ./... 
+	-go get -v -u ./...
 	-go test -v -i ./...
 	# TODO: why is this not being fetched with the command above?
 	-go get -u github.com/fsouza/fake-gcs-server/fakestorage
@@ -89,7 +89,7 @@ rewrite-import-paths:
 docs:
 	-make kill-docs
 	nohup godoc -play -http=127.0.0.1:6064 </dev/null >/dev/null 2>&1 & echo $$! > .godoc.pid
-	cat .godoc.pid  
+	cat .godoc.pid
 
 
 kill-docs:
@@ -120,4 +120,3 @@ endef
 
 SHELL = /bin/bash
 RAND = $(shell echo $$RANDOM)
-

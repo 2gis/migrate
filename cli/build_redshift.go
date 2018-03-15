@@ -3,5 +3,5 @@
 package main
 
 import (
-	_ "github.com/mattes/migrate/database/redshift"
+	_ "github.com/2gis/migrate/database/redshift"
 )

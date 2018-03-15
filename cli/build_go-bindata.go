@@ -3,5 +3,5 @@
 package main
 
 import (
-	_ "github.com/mattes/migrate/source/go-bindata"
+	_ "github.com/2gis/migrate/source/go-bindata"
 )

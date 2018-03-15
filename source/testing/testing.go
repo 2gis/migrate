@@ -7,7 +7,7 @@ import (
 	"os"
 	"testing"
 
-	"github.com/mattes/migrate/source"
+	"github.com/2gis/migrate/source"
 )
 
 // Test runs tests against source implementations.

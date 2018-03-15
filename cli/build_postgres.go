@@ -3,5 +3,5 @@
 package main
 
 import (
-	_ "github.com/mattes/migrate/database/postgres"
+	_ "github.com/2gis/migrate/database/postgres"
 )

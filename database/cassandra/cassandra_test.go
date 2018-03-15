@@ -3,8 +3,8 @@ package cassandra
 import (
 	"fmt"
 	"testing"
-	dt "github.com/mattes/migrate/database/testing"
-	mt "github.com/mattes/migrate/testing"
+	dt "github.com/2gis/migrate/database/testing"
+	mt "github.com/2gis/migrate/testing"
 	"github.com/gocql/gocql"
 	"time"
 	"strconv"

@@ -3,5 +3,5 @@
 package main
 
 import (
-	_ "github.com/mattes/migrate/source/aws-s3"
+	_ "github.com/2gis/migrate/source/aws-s3"
 )

@@ -5,7 +5,7 @@ import (
 	"os"
 	"testing"
 
-	dt "github.com/mattes/migrate/database/testing"
+	dt "github.com/2gis/migrate/database/testing"
 )
 
 func Test(t *testing.T) {
