@@ -8,8 +8,8 @@ import (
 	"strconv"
 	"time"
 
+	"github.com/2gis/migrate/database"
 	"github.com/gocql/gocql"
-	"github.com/mattes/migrate/database"
 )
 
 func init() {
@@ -71,6 +71,18 @@ func (p *Cassandra) Open(url string) (database.Driver, error) {
 			Password: u.Query().Get("password"),
 		}
 		cluster.Authenticator = authenticator
+	}
+
+	if len(u.Query().Get("disableinitialhostlookup")) > 0 {
+		var hostlookup int
+		hostlookup, err = strconv.Atoi(u.Query().Get("disableinitialhostlookup"))
+		if err != nil {
+			return nil, err
+		}
+
+		if hostlookup == 1 {
+			cluster.DisableInitialHostLookup = true
+		}
 	}
 
 	// Retrieve query string configuration

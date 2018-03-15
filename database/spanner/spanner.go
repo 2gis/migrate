@@ -14,8 +14,8 @@ import (
 	"cloud.google.com/go/spanner"
 	sdb "cloud.google.com/go/spanner/admin/database/apiv1"
 
-	"github.com/mattes/migrate"
-	"github.com/mattes/migrate/database"
+	"github.com/2gis/migrate"
+	"github.com/2gis/migrate/database"
 
 	"google.golang.org/api/iterator"
 	adminpb "google.golang.org/genproto/googleapis/spanner/admin/database/v1"

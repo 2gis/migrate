@@ -10,8 +10,8 @@ import (
 	"sync"
 	"time"
 
-	"github.com/mattes/migrate/database"
-	"github.com/mattes/migrate/source"
+	"github.com/2gis/migrate/database"
+	"github.com/2gis/migrate/source"
 )
 
 // DefaultPrefetchMigrations sets the number of migrations to pre-read
